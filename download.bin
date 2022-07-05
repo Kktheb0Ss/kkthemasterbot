@@ -1,0 +1,370 @@
+apiVersion: v1
+entries:
+  cockroachdb:
+  - apiVersion: v2
+    appVersion: 19.2.5
+    created: "2022-03-18T10:09:46.525067562Z"
+    dependencies:
+    - name: cockroachdb
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 3.0.7
+    description: CockroachDB is a scalable, survivable, strongly-consistent SQL database.
+    digest: fb45b179cfe45c69c3eaab204f35f6287be03923a7ee735288381b3407c5cdbd
+    home: https://www.cockroachlabs.com
+    icon: https://apps.okteto.com/cockroachdb/icon.png
+    maintainers:
+    - email: ramiro@okteto.com
+      name: ramiro
+    name: cockroachdb
+    sources:
+    - https://github.com/cockroachdb/cockroach
+    - https://github.com/okteto/charts/tress/master/cockroachdb
+    urls:
+    - https://apps.okteto.com/cockroachdb/cockroachdb-3.0.7.tgz
+    version: 3.0.7
+  flux:
+  - apiVersion: v2
+    appVersion: 1.24.2
+    created: "2022-03-18T10:09:46.52878734Z"
+    dependencies:
+    - name: flux
+      repository: https://charts.fluxcd.io
+      version: 1.11.3
+    - name: helm-operator
+      repository: https://charts.fluxcd.io
+      version: 1.4.0
+    description: GitOps for continuous delivery
+    digest: 3a21516cbf860140c94adbdcd62ef6f2cb5990982807fe86b85fe93b71495c74
+    home: https://fluxcd.io
+    icon: https://apps.okteto.com/flux/icon.png
+    keywords:
+    - gitops
+    - helm
+    maintainers:
+    - email: pablo@okteto.com
+      name: pablo
+    name: flux
+    sources:
+    - https://okteto.com/blog/okteto-cloud-meets-gitops/
+    urls:
+    - https://apps.okteto.com/flux/flux-1.11.3.tgz
+    version: 1.11.3
+  gitlab-runner:
+  - apiVersion: v2
+    appVersion: 13.10.0
+    created: "2022-03-18T10:09:46.530612495Z"
+    dependencies:
+    - name: gitlab-runner
+      repository: https://charts.gitlab.io
+      version: 0.27.0
+    description: GitLab Runner fully integrated with your Kubernetes infrastructure
+    digest: d02258506af086813727946f13ea8f9195de19761d9ff11cb2bbc4d9a3c038de
+    home: https://gitlab.com
+    icon: https://apps.okteto.com/gitlab-runner/icon.png
+    keywords:
+    - ci/cd
+    maintainers:
+    - email: ramiro@okteto.com
+      name: ramiro
+    name: gitlab-runner
+    sources:
+    - https://charts.gitlab.io
+    - https://github.com/okteto/charts/tree/master/gitlab-runner
+    urls:
+    - https://apps.okteto.com/gitlab-runner/gitlab-runner-0.27.0.tgz
+    version: 0.27.0
+  litmuschaos:
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2022-03-18T10:09:46.531910256Z"
+    dependencies:
+    - alias: litmus
+      name: litmus-2-0-0-beta
+      repository: https://litmuschaos.github.io/litmus-helm
+      version: 2.0.13-Beta4
+    description: Cloud-Native Chaos Engineering for Kubernetes Developers
+    digest: 86a915a7d1e157c2a9cfc70e832858ed8a744d6ac0071e4366231a945619c141
+    home: https://litmuschaos.io
+    icon: https://apps.okteto.com/litmus/icon.png
+    keywords:
+    - chaos-engineering
+    - resiliency
+    - kubernetes
+    maintainers:
+    - email: raj.das@mayadata.io
+      name: rajdas98
+    - email: shubham.chaudhary@mayadata.io
+      name: ispeakc0de
+    - email: jasssstkn@yahoo.com
+      name: jasstkn
+    name: litmuschaos
+    sources:
+    - https://github.com/litmuschaos/litmus
+    urls:
+    - https://apps.okteto.com/litmuschaos/litmuschaos-2.0.13-Beta4.tgz
+    version: 2.0.13-Beta4
+  mariadb:
+  - apiVersion: v2
+    appVersion: 10.3.18
+    created: "2022-03-18T10:09:46.533508991Z"
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system
+    digest: 98fac563d4e808ee9584b7d978dde6253104dcb63c12205da4341943c3146b7d
+    home: https://mariadb.org
+    icon: https://apps.okteto.com/mariadb/icon.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    maintainers:
+    - email: hello@okteto.com
+      name: okteto
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb
+    - https://github.com/prometheus/mysqld_exporter
+    urls:
+    - https://apps.okteto.com/mariadb/mariadb-6.10.1.tgz
+    version: 6.10.1
+  memcached:
+  - apiVersion: v2
+    appVersion: 1.6.9
+    created: "2022-03-18T10:09:46.53760493Z"
+    dependencies:
+    - name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.0
+    description: Memcached is an in-memory key-value store for small chunks of arbitrary
+      data (strings, objects) from results of database calls, API calls, or page rendering.
+    digest: c24426bf9171980d71b4ab602d19ce97b9cada04b41ed18cd9706163dec7ac8b
+    home: http://memcached.org/
+    icon: https://apps.okteto.com/memcached/icon.png
+    keywords:
+    - memcached
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/master/bitnami/memcached
+    - https://github.com/bitnami/bitnami-docker-memcached
+    urls:
+    - https://apps.okteto.com/memcached/memcached-5.3.0.tgz
+    version: 5.3.0
+  minio:
+  - apiVersion: v2
+    created: "2022-03-18T10:09:46.540972906Z"
+    dependencies:
+    - name: minio
+      repository: https://helm.min.io/
+      version: 8.0.10
+    description: MinIO is a high performance data infrastructure for machine learning,
+      analytics and application data workloads.
+    digest: b7ae8d9245bae8b27677649024f955e97e1220623caa350b5f741f0801b62752
+    home: https://min.io
+    icon: https://apps.okteto.com/minio/icon.png
+    keywords:
+    - storage
+    maintainers:
+    - email: ramiro@okteto.com
+      name: ramiro
+    name: minio
+    sources:
+    - https://github.com/helm/charts/tree/master/stable/minio
+    - https://github.com/okteto/charts/tree/master/minio
+    urls:
+    - https://apps.okteto.com/minio/minio-8.0.10.tgz
+    version: 8.0.10
+  mongodb:
+  - apiVersion: v2
+    appVersion: 4.0.12
+    created: "2022-03-18T10:09:46.543415185Z"
+    description: NoSQL document-oriented database that stores JSON-like documents
+    digest: eb6df435acad027eedfb1b5f3ef8a8c26897aeac060346d1c872809633043565
+    home: https://mongodb.org
+    icon: https://apps.okteto.com/mongodb/icon.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: hello@okteto.com
+      name: okteto
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    urls:
+    - https://apps.okteto.com/mongodb/mongodb-7.2.11.tgz
+    version: 7.2.11
+  openfaas:
+  - apiVersion: v2
+    created: "2022-03-18T10:09:46.547123868Z"
+    dependencies:
+    - name: openfaas
+      repository: https://openfaas.github.io/faas-netes
+      version: 5.8.4
+    description: Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
+    digest: c1023d2a3865e3a9badca67ebdbcc09243376594166469941a9767819d1005e3
+    home: https://www.openfaas.com
+    icon: https://apps.okteto.com/openfaas/icon.png
+    keywords:
+    - functions
+    - service
+    maintainers:
+    - email: alex@openfaas.com
+      name: alexellis
+    - email: roesler.lucas@gmail.com
+      name: lucasroesler
+    - email: stefan.prodan@gmail.com
+      name: stefanprodan
+    name: openfaas
+    sources:
+    - https://github.com/openfaas/faas
+    - https://github.com/openfaas/faas-netes
+    - https://github.com/okteto/charts/tree/master/openfaas
+    urls:
+    - https://apps.okteto.com/openfaas/openfaas-5.8.4.tgz
+    version: 5.8.4
+  pgadmin:
+  - apiVersion: v2
+    appVersion: "4.22"
+    created: "2022-03-18T10:09:46.548149849Z"
+    description: pgAdmin is the most popular and feature rich Open Source administration
+      and development platform for PostgreSQL
+    digest: e6c242af9e002a3f9314846a4f60d43e71aacaa74a13936fa8bc13f4b1808947
+    home: https://www.pgadmin.org/
+    icon: https://apps.okteto.com/pgadmin/icon.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    maintainers:
+    - email: ramiro@okteto.com
+      name: ramiro
+    name: pgadmin
+    sources:
+    - https://git.postgresql.org/gitweb/?p=pgadmin4.git
+    - https://github.com/okteto/charts/tree/master/pgadmin
+    type: application
+    urls:
+    - https://apps.okteto.com/pgadmin/pgadmin-0.1.0.tgz
+    version: 0.1.0
+  postgresql:
+  - apiVersion: v2
+    appVersion: 11.5.0
+    created: "2022-03-18T10:09:46.550394703Z"
+    description: An object-relational database management system
+    digest: 89d434d0e8948a80463b758cef83fce76e6069fc59624d912c719916be7ff3fc
+    home: https://www.postgresql.org/
+    icon: https://apps.okteto.com/postgresql/icon.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: hello@okteto.com
+      name: okteto
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    urls:
+    - https://apps.okteto.com/postgresql/postgresql-6.3.12.tgz
+    version: 6.3.12
+  prometheus:
+  - apiVersion: v2
+    appVersion: 2.16.0
+    created: "2022-03-18T10:09:46.558294206Z"
+    dependencies:
+    - name: prometheus
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 11.0.4
+    description: Prometheus is a monitoring system and time series database
+    digest: c0b809695159664b8293cb97ab6e565698b817357f1a6ef64d00e2dbb82e829b
+    home: https://prometheus.io
+    icon: https://apps.okteto.com/prometheus/icon.png
+    keywords:
+    - observability
+    maintainers:
+    - email: ramiro@okteto.com
+      name: ramiro
+    name: prometheus
+    sources:
+    - https://github.com/helm/charts/tree/master/stable/prometheus
+    - https://github.com/okteto/charts/tree/master/prometheus
+    urls:
+    - https://apps.okteto.com/prometheus/prometheus-11.0.4.tgz
+    version: 11.0.4
+  rabbitmq:
+  - apiVersion: v2
+    appVersion: 3.8.7
+    created: "2022-03-18T10:09:46.561315059Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.6.4
+    description: Open source message broker software that implements AMQP
+    digest: 1823e93784bae76402d5b8d9d169cc3cdfe442964ed3882148c04145f6437b17
+    home: https://www.rabbitmq.com
+    icon: https://apps.okteto.com/rabbitmq/icon.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - email: hello@okteto.com
+      name: okteto
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/bitnami-docker-rabbitmq
+    urls:
+    - https://apps.okteto.com/rabbitmq/rabbitmq-7.6.4.tgz
+    version: 7.6.4
+  redis:
+  - apiVersion: v2
+    appVersion: 6.2.2
+    created: "2022-03-18T10:09:46.56633928Z"
+    dependencies:
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.1.0
+    description: Open source, advanced key-value store.
+    digest: 57277a4d175c92c6ab0ee821f617009b52de46e72981d6ef2719e082bfc8a702
+    home: http://redis.io/
+    icon: https://apps.okteto.com/redis/icon.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    urls:
+    - https://apps.okteto.com/redis/redis-14.1.0.tgz
+    version: 14.1.0
+  terminal:
+  - apiVersion: v2
+    appVersion: "0.4"
+    created: "2022-03-18T10:09:46.566832751Z"
+    description: Web-based terminal for Kubernetes powered by gotty
+    digest: b279d631e5f339dac36a1c947414c40a47eaaddd4deb0cc628087fade8794174
+    icon: https://apps.okteto.com/terminal/icon.png
+    maintainers:
+    - email: hello@okteto.com
+      name: okteto
+    name: terminal
+    type: application
+    urls:
+    - https://apps.okteto.com/terminal/terminal-0.2.tgz
+    version: "0.2"
+generated: "2022-03-18T10:09:46.522630452Z"
